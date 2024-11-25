@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/Background_img">
+
+    <!-- Top Card: Signed-In User -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="16dp">
+
+
+            <ImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/Camera"
+                android:contentDescription="Profile Picture" />
+
+            <TextView
+                android:id="@+id/usernameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/comic_neue_bold"
+                android:text="Username that you signed in with"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Big Card: Placeholder Chats -->
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="339dp"
+        android:layout_height="204dp"
+        android:src="@drawable/ChatOne"
+        android:layout_gravity="center"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        >
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Chat User 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/Man"
+                    android:contentDescription="Profile Picture" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:text="Placeholder Chat 1"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Chat User 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/Man"
+                    android:contentDescription="Profile Picture" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:text="Placeholder Chat 2"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Chat User 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/Man"
+                    android:contentDescription="Profile Picture" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:text="Placeholder Chat 3"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="@dimen/_370sdp"
+        android:layout_height="134dp"
+        android:layout_gravity="center"
+        android:src="@drawable/LogOut" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:textColor="@color/white"
+        android:fontFamily="@font/comic_neue_bold"
+        android:textSize="@dimen/_15sdp"
+        android:gravity="center"
+        android:shadowColor="#80000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="14"/>
+
+
+</LinearLayout>
